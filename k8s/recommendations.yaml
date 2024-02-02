@@ -46,7 +46,7 @@ spec:
       serviceAccountName: service-mesh-demo-recommendations
       containers:
       - name: reviews
-        image: quay.io/rhdevelopers/service-mesh-recommendations:v1.0
+        image: registry.ocp4.imss.com:8443/ocp4/openshift4-service-mesh-recommendations-food
         imagePullPolicy: IfNotPresent
         env:
         - name: RECOMMENDATION_CATEGORY
@@ -79,7 +79,7 @@ spec:
       serviceAccountName: service-mesh-demo-recommendations
       containers:
       - name: reviews
-        image: quay.io/rhdevelopers/service-mesh-recommendations:v1.0
+        image: registry.ocp4.imss.com:8443/ocp4/openshift4-service-mesh-recommendations-music
         imagePullPolicy: IfNotPresent
         env:
         - name: RECOMMENDATION_CATEGORY
