@@ -44,7 +44,7 @@ spec:
       serviceAccountName: service-mesh-demo-payments
       containers:
       - name: payments
-        image: quay.io/rhdevelopers/service-mesh-payments:v1.0
+        image: registry.ocp4.imss.com:8443/ocp4/openshift4-service-mesh-payments
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
