@@ -43,7 +43,7 @@ spec:
       serviceAccountName: service-mesh-demo-orders
       containers:
       - name: orders
-        image: quay.io/rhdevelopers/service-mesh-orders:v1.0
+        image: registry.ocp4.imss.com:8443/ocp4/openshift4-service-mesh-orders
         imagePullPolicy: IfNotPresent
         env:
         - name: PAYMENTS_URL
